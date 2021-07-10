@@ -1,0 +1,107 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.BottomSheetProto" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="editTextStyle">
+        <item name="android:minHeight">50dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@android:color/darker_gray</item>
+    </style>
+
+    <!--BASE BOTTOM SHEET THEME-->
+    <style name="BaseBottomSheetDialog" parent="@style/Theme.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyleBase</item>
+        <item name="colorSurface">@color/colorBottomSheet</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowSoftInputMode">adjustResize|stateHidden</item>
+    </style>
+
+    <style name="BottomSheetStyleBase" parent="@style/Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="shapeAppearanceOverlay">@style/CustomShapeBase</item>
+    </style>
+
+    <style name="CustomShapeBase" parent="ShapeAppearanceOverlay.MaterialComponents.BottomSheet">
+        <item name="cornerSizeTopLeft">@dimen/bottom_sheet_corner_radius</item>
+        <item name="cornerSizeTopRight">@dimen/bottom_sheet_corner_radius</item>
+    </style>
+
+    <!--NEW STYLE 1-->
+    <style name="BottomSheetDialogTheme1" parent="BaseBottomSheetDialog" />
+
+    <!--NEW STYLE 2-->
+    <style name="BottomSheetDialogTheme2" parent="BaseBottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle2</item>
+    </style>
+
+    <style name="BottomSheetStyle2" parent="@style/Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="shapeAppearance">@style/CustomShape2</item>
+    </style>
+
+    <style name="CustomShape2" parent="ShapeAppearanceOverlay.MaterialComponents.BottomSheet">
+        <item name="cornerSizeTopLeft">@dimen/bottom_sheet_corner_radius</item>
+        <item name="cornerSizeTopRight">@dimen/bottom_sheet_corner_radius</item>
+    </style>
+
+    <!--NEW STYLE 3-->
+    <style name="BottomSheetDialogTheme3" parent="BaseBottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle3</item>
+    </style>
+
+    <style name="BottomSheetStyle3" parent="@style/Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="shapeAppearanceOverlay">@style/CustomShape3</item>
+    </style>
+
+    <style name="CustomShape3" parent="ShapeAppearanceOverlay.MaterialComponents.BottomSheet">
+        <item name="cornerSizeTopLeft">@dimen/bottom_sheet_corner_radius</item>
+        <item name="cornerSizeTopRight">@dimen/bottom_sheet_corner_radius</item>
+        <item name="cornerFamily">cut</item>
+    </style>
+
+    <!--NEW STYLE 4-->
+    <style name="BottomSheetDialogTheme4" parent="BaseBottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle4</item>
+    </style>
+
+    <style name="BottomSheetStyle4" parent="@style/Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="shapeAppearanceOverlay">@style/CustomShape4</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+    </style>
+
+    <style name="CustomShape4" parent="ShapeAppearanceOverlay.MaterialComponents.BottomSheet">
+        <item name="cornerSizeTopLeft">@dimen/bottom_sheet_corner_radius</item>
+        <item name="cornerSizeTopRight">@dimen/bottom_sheet_corner_radius</item>
+    </style>
+
+    <!--NEW STYLE 5-->
+    <style name="BottomSheetDialogTheme5" parent="BaseBottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle5</item>
+    </style>
+
+    <style name="BottomSheetStyle5" parent="@style/Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="shapeAppearanceOverlay">@style/CustomShape5</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="backgroundTint">@color/colorBottomCustom</item>
+    </style>
+
+    <style name="CustomShape5" parent="ShapeAppearanceOverlay.MaterialComponents.BottomSheet">
+        <item name="cornerSizeTopLeft">@dimen/bottom_sheet_corner_radius</item>
+        <item name="cornerSizeTopRight">@dimen/bottom_sheet_corner_radius</item>
+    </style>
+
+</resources>
