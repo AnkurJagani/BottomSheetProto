@@ -23,7 +23,7 @@
     </style>
 
     <!--BASE BOTTOM SHEET THEME-->
-    <style name="BaseBottomSheetDialog" parent="@style/Theme.MaterialComponents.BottomSheetDialog">
+    <style name="BaseBottomSheetDialog" parent="@style/Theme.MaterialComponents.Light.BottomSheetDialog">
         <item name="bottomSheetStyle">@style/BottomSheetStyleBase</item>
         <item name="colorSurface">@color/colorBottomSheet</item>
         <item name="android:windowIsFloating">true</item>
