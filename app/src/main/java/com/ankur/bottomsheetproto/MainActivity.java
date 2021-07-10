@@ -11,6 +11,7 @@ import com.ankur.bottomsheetproto.widgets.BottomSheet2;
 import com.ankur.bottomsheetproto.widgets.BottomSheet3;
 import com.ankur.bottomsheetproto.widgets.BottomSheet4;
 import com.ankur.bottomsheetproto.widgets.BottomSheet5;
+import com.ankur.bottomsheetproto.widgets.BottomSheet6;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -42,5 +43,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void onBottomClick5(View view) {
         new BottomSheet5().show(getSupportFragmentManager(), "BSD5");
+    }
+
+    public void onBottomClick6(View view) {
+      BottomSheet6 bottomSheet6 =   new BottomSheet6();
+      bottomSheet6.show(getSupportFragmentManager(), "BSD5");
+      
     }
 }
